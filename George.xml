@@ -1,18 +1,18 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_drawtext" id="203" x="56" y="101">
-    <field name="TEXT">I'm on my way!</field>
+  <block type="oled_setcursor" id="244" inline="true" x="52" y="65">
+    <value name="STARTX">
+      <block type="math_number" id="257">
+        <field name="NUM">10</field>
+      </block>
+    </value>
+    <value name="STARTY">
+      <block type="math_number" id="264">
+        <field name="NUM">10</field>
+      </block>
+    </value>
     <next>
-      <block type="oled_setcursor" id="244" inline="true">
-        <value name="STARTX">
-          <block type="math_number" id="257">
-            <field name="NUM">10</field>
-          </block>
-        </value>
-        <value name="STARTY">
-          <block type="math_number" id="264">
-            <field name="NUM">10</field>
-          </block>
-        </value>
+      <block type="oled_drawtext" id="203">
+        <field name="TEXT">I'm on my way!</field>
         <next>
           <block type="variables_set" id="2" inline="true">
             <field name="VAR">Number</field>
