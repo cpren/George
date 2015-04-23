@@ -54,6 +54,26 @@
                             <field name="VAR">Number</field>
                           </block>
                         </value>
+                        <next>
+                          <block type="variables_set" id="150" inline="true">
+                            <field name="VAR">Number</field>
+                            <value name="VALUE">
+                              <block type="math_arithmetic" id="163" inline="true">
+                                <field name="OP">ADD</field>
+                                <value name="A">
+                                  <block type="variables_get" id="167">
+                                    <field name="VAR">Number</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="174">
+                                    <field name="NUM">1</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
                       </block>
                     </next>
                   </block>
